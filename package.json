@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "hl7.fhir.au.base": "^4.1.0"
+  }
+}
