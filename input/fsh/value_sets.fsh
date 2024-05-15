@@ -21,3 +21,8 @@ ValueSet: ARFMedicationCodeVS
 Id: arf-medication-code-vs
 Title: "Medication Codes for Acute Rheumatic Fever"
 Description: "Medication Codes for Acute Rheumatic Fever"
+* $SCT#1276211000168102 "Bicillin L-A 1.2 million units (1016.6 mg)/2.3 mL injection, 2.3 mL syringe"
+* $SCT#70271000036108 "Bicillin L-A 1.2 million units (900 mg)/2 mL injection, 2 mL cartridge"
+* $SCT#39212011000036104 "Bicillin L-A 1.2 million units (900 mg)/2 mL injection, 2 mL syringe"
+* $SCT#1248021000168101 "Bicillin L-A 600 000 units (517 mg)/1.17 mL injection, 1.17 mL syringe"
+* $SCT#4089011000036101 "Bicillin L-A"

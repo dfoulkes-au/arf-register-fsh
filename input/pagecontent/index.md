@@ -6,7 +6,7 @@ Acute rheumatic fever (ARF) results from the body’s autoimmune response to a t
 
 Whilst ARF is relatively rare in wealth countries,  reported ARF incidence rates are high in populations in rural/remote Northern Australia  (NQ 155/100,000 in children aged 5 to 14 and NT380/100,000 children).  
 
-Management of ARF is crucial for preventing development of Rheumatic Heart Disease in a patient.  This is primarily achieved by regular injections of Benzathine (Bicillin),  but for various reasons this can be difficult to maintain and track.   For this reason,  a national or regional ARF/RHD register that tracks ongoing compliance with medication is an important tool in controlling this disease.  
+Management of ARF is crucial for preventing development of Rheumatic Heart Disease in a patient.  This is primarily achieved by regular preventative injections of Bicillin (benzathine penicillin G).  For various reasons this can be difficult to maintain and track and thus a national or regional ARF/RHD register that tracks ongoing compliance with medication is an important tool in controlling this disease.  
 
 This Implementation Guide outlines the FHIR profiles to be used in an ARF national or state register to support management of ARF.
 

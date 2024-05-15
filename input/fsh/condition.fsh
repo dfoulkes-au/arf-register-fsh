@@ -9,6 +9,6 @@ Description: "Profile of ARF Condition."
 * clinicalStatus 0..1 MS
 * verificationStatus 0..1 MS
 * category 1..* MS
-* severity 1..1 MS
+* severity from ARFSeverityVS (required)
 * subject only Reference(ARFPatient)
 

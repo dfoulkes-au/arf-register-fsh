@@ -8,7 +8,7 @@ Description: "Profile of Medication Prescribed for ARF Patient."
 * identifier 1..* MS
 * status 1..1 MS 
 * intent = #plan
-* medicationCodeableConcept 1..1 MS
+* medicationCodeableConcept from ARFMedicationCodeVS (required)
 * subject only Reference(ARFPatient)
 * authoredOn 1..1 
 * requester only Reference
@@ -23,7 +23,7 @@ Description: "Profile of Medication Administered to ARF Patient."
 * identifier 1..* MS
 * status = #completed
 * basedOn only Reference(ARFMedicationRequest)
-* medicationCodeableConcept 1..1 MS
+* medicationCodeableConcept from ARFMedicationCodeVS (required)
 * subject only Reference(ARFPatient)
 * effectiveDateTime 1..1
 * dateAsserted 1..1
