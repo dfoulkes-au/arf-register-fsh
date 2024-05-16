@@ -23,6 +23,7 @@ Description: "Profile of Medication Administered to ARF Patient."
 * identifier 1..* MS
 * status = #completed
 * basedOn only Reference(ARFMedicationRequest)
+* medication[x] only CodeableConcept
 * medicationCodeableConcept from ARFMedicationCodeVS (required)
 * subject only Reference(ARFPatient)
 * effectiveDateTime 1..1

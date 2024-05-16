@@ -6,7 +6,11 @@ Acute rheumatic fever (ARF) results from the body’s autoimmune response to a t
 
 Whilst ARF is relatively rare in wealth countries,  reported ARF incidence rates are high in populations in rural/remote Northern Australia  (NQ 155/100,000 in children aged 5 to 14 and NT380/100,000 children).  
 
-Management of ARF is crucial for preventing development of Rheumatic Heart Disease in a patient.  This is primarily achieved by regular preventative injections of Bicillin (benzathine penicillin G).  For various reasons this can be difficult to maintain and track and thus a national or regional ARF/RHD register that tracks ongoing compliance with medication is an important tool in controlling this disease.  
+Injectable benzathine penicillin G (BPG), given via intramuscular injection every 3 to 4 weeks for a prolonged period (eg, 10 years, until age 40 years, lifelong) is the cornerstone of RHD prevention (preventing rheumatic fever recurrence) and management. For various reasons this can be difficult to maintain and track.  Thus a national or regional ARF/RHD register that tracks a patients ongoing compliance with medication is an important tool in controlling progression of this disease.  
+
+In NQ, Adherence to recommended frequency of such injection has been very low:
+> Overall, adherence to secondary prophylaxis for ARF/RHD in Far North Queensland over the study period was insufficient to provide prophylaxis against recurrences of ARF per current guidelines. The vast majority of injections were not delivered within the recommended 28‐day interval and a significant number were not even administered within 35 days.
+<https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8048926/>
 
 This Implementation Guide outlines the FHIR profiles to be used in an ARF national or state register to support management of ARF.
 
