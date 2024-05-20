@@ -46,7 +46,13 @@ This workflow takes place when a specific instance of the medication request has
 
 ### Query Status of the Patient
 
-This workflow may take place at any time,  and will return the current status of the patient:   Not Registered | Registered | Deceased | Care Plan Created | Care Plan Expired | Care Plan on Track | Overdue | Loss of Contact.    This query will also indicate the most recent administration of medication,  Patient contact details,  and Practitioner/Organization.
+This workflow may take place at any time,  and will return the current information about a specific patient:
+
+* Status (eg. Not Registered, Registered, Deceased, Care Plan Created, Care Plan Expired, Care Plan on Track, Overdue, Loss of Contact)
+* Date and details of most recent administration of Bicillin
+* Patient contact details
+* GP/Pracitioner detail
+* Organization
 
 ### Maintenance Actions
 
@@ -54,6 +60,6 @@ In addition to the workflows above,  a number of routine workflows are supported
 
 **Acknowledgements**
 
-[FHIR Shorthand FSH](https://build.fhir.org/ig/HL7/fhir-shorthand/overview.html)
-[FHIR Australia AU FHIR Base Implementation Guide](https://build.fhir.org/ig/hl7au/au-fhir-base/index.html)
-[Te Whatu Ora Shared Care FHIR API](https://build.fhir.org/ig/tewhatuora/cinc-fhir-ig/index.html)
+* [FHIR Shorthand FSH](https://build.fhir.org/ig/HL7/fhir-shorthand/overview.html)
+* [FHIR Australia AU FHIR Base Implementation Guide](https://build.fhir.org/ig/hl7au/au-fhir-base/index.html)
+* [Te Whatu Ora Shared Care FHIR API](https://build.fhir.org/ig/tewhatuora/cinc-fhir-ig/index.html)
