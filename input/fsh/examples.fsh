@@ -6,9 +6,9 @@ Description: "An example of a clinic providing health services to ARF patient."
 * telecom.system = #phone
 * telecom.value = "+61 7 12345678"
 * identifier.use = #official
-* identifier.type.coding.system = "http://terminology.hl7.org.au/CodeSystem/v2-0203"
+* identifier.type.coding.system = $IdTypeAU
 * identifier.type.coding.code = #NOI
-* identifier.system = "http://ns.electronichealth.net.au/id/hi/hpio/1.0"
+* identifier.system = $HPIOIdentifierSystem
 * identifier.value = "8003621566684455"
 * address.line = "2342 Main Road"
 * address.city = "Coen"
@@ -20,9 +20,9 @@ Instance: DoctorPayne
 InstanceOf: ARFPractitioner
 Description: "Example of Practioner Providing Care for ARF Patient"
 * identifier.use = #official
-* identifier.type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
+* identifier.type.coding.system = $IdType
 * identifier.type.coding.code = #NPI
-* identifier.system = "http://ns.electronichealth.net.au/id/hi/hpii/1.0"
+* identifier.system = $HPIIIdentifierSystem
 * identifier.value = "8003619900015717"
 * name
   * given[0] = "Jane"
@@ -37,9 +37,9 @@ Instance: DoctorPayneRole1
 InstanceOf: ARFPractitionerRole
 Description: "Example of Practioner Providing Care for ARF Patient"
 * identifier.use = #official
-* identifier.type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
+* identifier.type.coding.system = $IdType
 * identifier.type.coding.code = #UPIN
-* identifier.system = "http://ns.electronichealth.net.au/id/medicare-provider-number"
+* identifier.system = $MedicareProviderIdentifierSystem
 * identifier.value = "2426621B"
 * practitioner = Reference(DoctorPayne)
 * organization = Reference(VeryRemoteClinic)
@@ -51,9 +51,9 @@ Instance: JamesPondPatient
 InstanceOf: ARFPatient
 Description: "An example of a patient recorded in ARF register."
 * identifier.use = #official
-* identifier.type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
+* identifier.type.coding.system = $IdType
 * identifier.type.coding.code = #NI
-* identifier.system = "http://ns.electronichealth.net.au/id/hi/ihi/1.0"
+* identifier.system = $IHIIdentifierSystem
 * identifier.value = "8003608833357361"
 * name
   * given[0] = "James"
@@ -62,7 +62,7 @@ Description: "An example of a patient recorded in ARF register."
 * gender = #male
 * telecom.system = #phone
 * telecom.value = "+61 444 123456"
-* extension[indigenousStatus].valueCoding.system = "https://healthterminologies.gov.au/fhir/CodeSystem/australian-indigenous-status-1"
+* extension[indigenousStatus].valueCoding.system = $IndigStatus
 * extension[indigenousStatus].valueCoding.code = #3
 * extension[indigenousStatus].valueCoding.display = "Both Aboriginal and Torres Strait Islander origin"
 * managingOrganization = Reference(RemoteClinic)
