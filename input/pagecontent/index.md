@@ -24,7 +24,9 @@ Accompanying  documents outline a suggested architecture and design for the regi
 
 ## Modelling Approach
 
-The FHIR resources in this implementation guide are based on AU Base Implementation Guide in order to apply this directly in Northern Australia contexts.  Due care is being taken to enable this to readily migrate to AU Core once this becomes stable.
+The FHIR resources in this implementation guide are based on AU Base Implementation Guide in order to apply this directly in Northern Australia contexts.  Due care is being taken to enable this to readily migrate to AU Core once this becomes stable.  The resource definitions in this guide include:
+[ARF Patient](StructureDefinition-ARFPatient.html)
+[ARF Condition](StructureDefinition-ARFCondition.html)
 
 It is also intended to create a generic ARF Implementation Guide for use in international contexts.  This will be based on generic FHIR v5 in order to keep the modelling reusable across different national contexts.
 

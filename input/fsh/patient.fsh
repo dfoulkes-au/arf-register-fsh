@@ -1,5 +1,4 @@
 // Patient registered with ARF/RHD
-// TODO: 
 // identifier - require AUIHI or AUMedicareCardNumber or AUDVANumber with optional other identifiers
 // name - check same constraints as for AU Core
 // address - ?? should this be required ??
@@ -8,7 +7,18 @@
 Profile: ARFPatient
 Parent: AUBasePatient
 Description: "Profile of Patient with ARF."
-* identifier only AUIHI
+* identifier 1.. MS
+* identifier ^slicing.discriminator.type = #pattern
+* identifier ^slicing.discriminator.path = "type"
+* identifier ^slicing.rules = #open
+* identifier ^condition = "au-core-pat-01"
+* identifier contains
+    ihi 1..1 MS and
+    medicare 0..1 MS and
+    dva 0..1 MS
+* identifier[ihi] only $au-ihi
+* identifier[medicare] only $au-medicarecardnumber
+* identifier[dva] only $au-dvanumber
 * name 1..* MS
 * birthDate 1..1 MS
 * gender 1..1 MS

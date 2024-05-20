@@ -30,7 +30,17 @@ Alias:   $RefMeaning = http://terminology.hl7.org/CodeSystem/referencerange-mean
 
 
 // AU Base
-Alias:  $AUBasePatient = http://hl7.org.au/fhir/StructureDefinition/au-patient
+Alias: $AUBasePatient = http://hl7.org.au/fhir/StructureDefinition/au-patient
+Alias: $au-practitionerrole = http://hl7.org.au/fhir/StructureDefinition/au-practitionerrole
+// provider identifier links
+Alias: $au-hpii = http://hl7.org.au/fhir/StructureDefinition/au-hpii
+Alias: $au-pbsprescribernumber = http://hl7.org.au/fhir/StructureDefinition/au-pbsprescribernumber
+Alias: $au-careagencyemployeeidentifier = http://hl7.org.au/fhir/StructureDefinition/au-careagencyemployeeidentifier
+Alias: $au-ahpraregistrationnumber = http://hl7.org.au/fhir/StructureDefinition/au-ahpraregistrationnumber
+// provider role identifier links
+Alias: $au-medicareprovidernumber = http://hl7.org.au/fhir/StructureDefinition/au-medicareprovidernumber
+Alias: $au-nationalprovideridentifieratorganisation = http://hl7.org.au/fhir/StructureDefinition/au-nationalprovideridentifieratorganisation
+// organisation identifier links
 Alias: $au-hpio = http://hl7.org.au/fhir/StructureDefinition/au-hpio
 Alias: $au-paioidentifier = http://hl7.org.au/fhir/StructureDefinition/au-paioidentifier
 Alias: $au-cspregistrationnumber = http://hl7.org.au/fhir/StructureDefinition/au-cspregistrationnumber
@@ -39,14 +49,7 @@ Alias: $au-australiancompanynumber = http://hl7.org.au/fhir/StructureDefinition/
 Alias: $au-australianregistredbodynumber = http://hl7.org.au/fhir/StructureDefinition/au-australianregistredbodynumber
 Alias: $au-nataaccreditationnumber = http://hl7.org.au/fhir/StructureDefinition/au-nataaccreditationnumber
 Alias: $au-pharmacyapprovalnumber = http://hl7.org.au/fhir/StructureDefinition/au-pharmacyapprovalnumber
-Alias: $au-address = http://hl7.org.au/fhir/StructureDefinition/au-address
-Alias: $patient-birthPlace = http://hl7.org/fhir/StructureDefinition/patient-birthPlace
-Alias: $indigenous-status = http://hl7.org.au/fhir/StructureDefinition/indigenous-status
-Alias: $veteran-status = http://hl7.org.au/fhir/StructureDefinition/veteran-status
-Alias: $closing-the-gap-registration = http://hl7.org.au/fhir/StructureDefinition/closing-the-gap-registration
-Alias: $patient-mothersMaidenName = http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName
-Alias: $patient-interpreterRequired = http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired
-Alias: $date-of-arrival = http://hl7.org.au/fhir/StructureDefinition/date-of-arrival
+// patient identifier links
 Alias: $au-ihi = http://hl7.org.au/fhir/StructureDefinition/au-ihi
 Alias: $au-medicarecardnumber = http://hl7.org.au/fhir/StructureDefinition/au-medicarecardnumber
 Alias: $au-dvanumber = http://hl7.org.au/fhir/StructureDefinition/au-dvanumber
@@ -55,6 +58,15 @@ Alias: $au-pensionerconcessioncardnumber = http://hl7.org.au/fhir/StructureDefin
 Alias: $au-cwlthseniorshealthcardnumber = http://hl7.org.au/fhir/StructureDefinition/au-cwlthseniorshealthcardnumber
 Alias: $au-medicalrecordnumber = http://hl7.org.au/fhir/StructureDefinition/au-medicalrecordnumber
 Alias: $au-insurancemembernumber = http://hl7.org.au/fhir/StructureDefinition/au-insurancemembernumber
+// other au references
+Alias: $au-address = http://hl7.org.au/fhir/StructureDefinition/au-address
+Alias: $patient-birthPlace = http://hl7.org/fhir/StructureDefinition/patient-birthPlace
+Alias: $indigenous-status = http://hl7.org.au/fhir/StructureDefinition/indigenous-status
+Alias: $veteran-status = http://hl7.org.au/fhir/StructureDefinition/veteran-status
+Alias: $closing-the-gap-registration = http://hl7.org.au/fhir/StructureDefinition/closing-the-gap-registration
+Alias: $patient-mothersMaidenName = http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName
+Alias: $patient-interpreterRequired = http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired
+Alias: $date-of-arrival = http://hl7.org.au/fhir/StructureDefinition/date-of-arrival
 Alias: $date-accuracy-indicator = http://hl7.org.au/fhir/StructureDefinition/date-accuracy-indicator
 Alias: $patient-birthTime = http://hl7.org/fhir/StructureDefinition/patient-birthTime
 Alias: $healthcare-organisation-role-type-1 = https://healthterminologies.gov.au/fhir/ValueSet/healthcare-organisation-role-type-1
