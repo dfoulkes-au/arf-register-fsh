@@ -139,4 +139,27 @@ Description: "Example of Medication Request (prescription) of Bicillin"
 * dispenseRequest.validityPeriod.start = "2023-10-01"
 * dispenseRequest.validityPeriod.end = "2024-10-01"
 
-
+// Administered medication example
+Instance: BicillinMedicationStatement
+InstanceOf: ARFMedicationStatement
+Description: "Example of Medication statement of administered dose of Bicillin"
+* status = #completed
+* basedOn = Reference(BicillinMedicationRequest)
+* medicationCodeableConcept.coding.system = $SCT
+* medicationCodeableConcept.coding.code = #1276211000168102
+* medicationCodeableConcept.coding.display = "Bicillin L-A 1.2 million units (1016.6 mg)/2.3 mL injection, 2.3 mL syringe"
+* subject = Reference(MikePondPatient)
+* effectiveDateTime = "2024-05-01"
+* dateAsserted = "2024-05-01"
+* informationSource = Reference(DoctorPayne)
+* dosage.timing.repeat.frequency = 1
+* dosage.timing.repeat.period = 4
+* dosage.timing.repeat.periodMax = 5
+* dosage.timing.repeat.periodUnit = #wk
+* dosage.route.coding.system = $SCT
+* dosage.route.coding.code = #78421000
+* dosage.route.coding.display = "Intramuscular route"
+* dosage.doseAndRate.doseQuantity.value = 1016.6
+* dosage.doseAndRate.doseQuantity.unit = "mg"
+* dosage.doseAndRate.doseQuantity.system = "http://unitsofmeasure.org"
+* dosage.doseAndRate.doseQuantity.code = #mg
