@@ -14,13 +14,14 @@ Description: "Profile of Medication Prescribed for ARF Patient."
 * requester only Reference
 * dosageInstruction 1..* MS
 
+
+
 // Medication as Administered to ARF Patient
 // TODO:
 // add context Reference(ARFMedicationRequest)
 Profile: ARFMedicationStatement
 Parent: AUBaseMedicationStatement
 Description: "Profile of Medication Administered to ARF Patient."
-* identifier 1..* MS
 * status = #completed
 * basedOn only Reference(ARFMedicationRequest)
 * medication[x] only CodeableConcept
@@ -30,3 +31,4 @@ Description: "Profile of Medication Administered to ARF Patient."
 * dateAsserted 1..1
 * informationSource only Reference(AUBasePractitioner)
 * dosage 1..1
+
