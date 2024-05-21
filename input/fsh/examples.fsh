@@ -62,9 +62,9 @@ Description: "An example of a patient recorded in ARF register."
 * gender = #male
 * telecom.system = #phone
 * telecom.value = "+61 444 123456"
-* extension[indigenousStatus].valueCoding.system = $IndigStatus
-* extension[indigenousStatus].valueCoding.code = #3
-* extension[indigenousStatus].valueCoding.display = "Both Aboriginal and Torres Strait Islander origin"
+* telecom.value = "+61 444 123456"
+* extension.url = $indigenous-status
+* extension.valueCoding = $indigenous-status-cs#3 "Both Aboriginal and Torres Strait Islander origin"
 * managingOrganization = Reference(RemoteClinic)
 * generalPractitioner = Reference(DoctorPayne)
 

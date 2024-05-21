@@ -5,20 +5,11 @@
 // deceased[x] - ?? should this be deceasedBoolean ??
 // genderIdentity and individualPronouns as agreed for AU Core
 Profile: ARFPatient
-Parent: AUBasePatient
+Parent: $au-core-patient
 Description: "Profile of Patient with ARF."
-* identifier 1.. MS
-* identifier ^slicing.discriminator.type = #pattern
-* identifier ^slicing.discriminator.path = "type"
-* identifier ^slicing.rules = #open
-* identifier ^condition = "au-core-pat-01"
-* identifier contains
-    ihi 1..1 MS and
-    medicare 0..1 MS and
-    dva 0..1 MS
-* identifier[ihi] only $au-ihi
-* identifier[medicare] only $au-medicarecardnumber
-* identifier[dva] only $au-dvanumber
+* identifier[ihi] 1..1 MS
+* identifier[medicare] 0..1 MS
+* identifier[dva] 0..1 MS
 * name 1..* MS
 * birthDate 1..1 MS
 * gender 1..1 MS
