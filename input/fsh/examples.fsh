@@ -163,3 +163,21 @@ Description: "Example of Medication statement of administered dose of Bicillin"
 * dosage.doseAndRate.doseQuantity.unit = "mg"
 * dosage.doseAndRate.doseQuantity.system = "http://unitsofmeasure.org"
 * dosage.doseAndRate.doseQuantity.code = #mg
+
+// Example Careplan for patient with RHD
+Instance: MikePondCarePlan
+InstanceOf: ARFCarePlan
+Description: "Example of care plan for patient with ARF"
+* identifier.type.coding.system = $IdType
+* identifier.type.coding.code = #LPN
+* identifier.system = "http://arfregister.example.au/id/registerid/localsystem"
+* identifier.value = "987654321"
+* title = "Rheumatic fever care plan for patient Mike Pond"
+* status = #active
+* intent = #plan
+* subject = Reference(MikePondPatient)
+* period.start = "2023-10-01"
+* period.end = "2024-10-01"
+* created = "2023-10-01"
+* author = Reference(DoctorPayneRole1)
+* activity.reference = Reference(BicillinMedicationRequest)

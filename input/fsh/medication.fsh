@@ -32,3 +32,33 @@ Description: "Profile of Medication Administered to ARF Patient."
 * informationSource only Reference(AUBasePractitioner)
 * dosage 1..1
 
+// care plan for patient with ARF
+/*
+Instance: A
+InstanceOf: ARFMedicationRequest
+Description: "Example of Medication Request (prescription) of Bicillin"
+* identifier.type.coding.system = $IdType
+* identifier.type.coding.code = #LPN
+* identifier.system = "http://veryremoteclinic.com.au/id/prescription/localsystem"
+* identifier.value = "1234567890"
+* status = #active
+* intent = #plan
+* medicationCodeableConcept.coding.system = $SCT
+* medicationCodeableConcept.coding.code = #1276211000168102
+* medicationCodeableConcept.coding.display = "Bicillin L-A 1.2 million units (1016.6 mg)/2.3 mL injection, 2.3 mL syringe"
+* subject = Reference(MikePondPatient)
+* authoredOn = "2023-10-01"
+* requester = Reference(DoctorPayneRole1)
+* reasonCode.text = "Secondary prophylaxis for ARF/RHD"
+* dosageInstruction.text = "Bicillin injection every 28 days"
+* dosageInstruction.timing.repeat.frequency = 1
+* dosageInstruction.timing.repeat.period = 4
+* dosageInstruction.timing.repeat.periodMax = 5
+* dosageInstruction.timing.repeat.periodUnit = #wk
+* dispenseRequest.dispenseInterval.value = 4
+* dispenseRequest.dispenseInterval.unit = "week"
+* dispenseRequest.dispenseInterval.system = "http://unitsofmeasure.org"
+* dispenseRequest.dispenseInterval.code = #wk
+* dispenseRequest.validityPeriod.start = "2023-10-01"
+* dispenseRequest.validityPeriod.end = "2024-10-01"
+*/
