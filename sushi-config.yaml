@@ -12,7 +12,7 @@ status: draft # draft | active | retired | unknown
 version: 0.1.1
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 dependencies:
-  hl7.fhir.au.core: 0.1.0-draft
+  hl7.fhir.au.core: 0.3.0-ballot
   hl7.fhir.au.base: 4.1.0
 # hl7.fhir.au.core: 0.1.0-draft  
 copyrightYear: 2024+

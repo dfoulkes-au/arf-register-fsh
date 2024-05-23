@@ -27,8 +27,11 @@ Alias:   $MedReqStatus = http://hl7.org/fhir/CodeSystem/medicationrequest-status
 Alias:   $MedReqIntent = http://hl7.org/fhir/CodeSystem/medicationrequest-intent
 Alias:   $MedReqCat = 	http://terminology.hl7.org/CodeSystem/medicationrequest-category
 Alias:   $RefMeaning = http://terminology.hl7.org/CodeSystem/referencerange-meaning
-
-
+Alias: $allergy-clinical-cs = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical
+Alias: $allergy-verification-cs = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification
+Alias: $condition-clinical-cs = http://terminology.hl7.org/CodeSystem/condition-clinical
+Alias: $condition-ver-status-cs = http://terminology.hl7.org/CodeSystem/condition-ver-status
+Alias: $condition-category-cs = http://terminology.hl7.org/CodeSystem/condition-category
 // AU Core Structure Definitions
 Alias: $au-core-patient = http://hl7.org.au/fhir/core/StructureDefinition/au-core-patient
 Alias: $au-core-practitioner = http://hl7.org.au/fhir/core/StructureDefinition/au-core-practitioner

@@ -37,7 +37,7 @@ Instance: DoctorPayneRole1
 InstanceOf: ARFPractitionerRole
 Description: "Example of Practioner Providing Care for ARF Patient"
 * identifier.use = #official
-* identifier.type.coding.system = $IdType
+* identifier.type.coding.system = $IdTypeAU
 * identifier.type.coding.code = #UPIN
 * identifier.system = $MedicareProviderIdentifierSystem
 * identifier.value = "2426621B"
@@ -65,7 +65,7 @@ Description: "An example of a patient recorded in ARF register."
 * telecom.value = "+61 444 123456"
 * extension.url = $indigenous-status
 * extension.valueCoding = $indigenous-status-cs#3 "Both Aboriginal and Torres Strait Islander origin"
-* managingOrganization = Reference(RemoteClinic)
+* managingOrganization = Reference(VeryRemoteClinic)
 * generalPractitioner = Reference(DoctorPayne)
 
 // Condition example
@@ -78,10 +78,10 @@ Description: "Example of ARF Condition for Patient."
 * code.coding.code = #195528001
 * code.coding.display = "Acute rheumatic fever" 
 * code.text =  "Acute rheumatic fever"
-* clinicalStatus = #active
-* verificationStatus = #confirmed
-* category = #problem-list-item
-* severity = #moderate
+* clinicalStatus = $condition-clinical-cs#active "Active"
+* verificationStatus = $condition-ver-status-cs#confirmed "Confirmed"
+* category = $condition-category-cs#problem-list-item "Problem List Item"
+* severity = $SCT#6736007 "Moderate severity"
 * subject = Reference(MikePondPatient)
 * onsetDateTime = "1995-02-02"
 * recordedDate = "2023-01-30"
@@ -93,12 +93,11 @@ Description: "Example of ARF Condition for Patient."
 Instance: MikePondMedicationAllergy
 InstanceOf: ARFAllergy
 Description: "Example of Medication Allergy for ARF Patient."
-* code.coding.system = $SCT
-* code.coding.code = #1907011000036106
-* code.coding.display = "Carboplatin" 
+* code.coding = $SCT#293779007 "Carboplatin allergy" 
+// * code.coding.version = "20240201"
 * code.text =  "Carboplatin"
-* clinicalStatus = #active
-* verificationStatus = #confirmed
+* clinicalStatus = $allergy-clinical-cs#active "Active"
+* verificationStatus = $allergy-verification-cs#confirmed "Confirmed"
 * category = #medication
 * criticality = #high
 * patient = Reference(MikePondPatient)
@@ -114,15 +113,14 @@ Description: "Example of Medication Allergy for ARF Patient."
 Instance: BicillinMedicationRequest
 InstanceOf: ARFMedicationRequest
 Description: "Example of Medication Request (prescription) of Bicillin"
-* identifier.type.coding.system = $IdType
+* identifier.type.coding.system = "http://terminology.hl7.org.au/CodeSystem/v2-0203"
 * identifier.type.coding.code = #LPN
 * identifier.system = "http://veryremoteclinic.com.au/id/prescription/localsystem"
 * identifier.value = "1234567890"
+* identifier.assigner = Reference(VeryRemoteClinic)
 * status = #active
 * intent = #plan
-* medicationCodeableConcept.coding.system = $SCT
-* medicationCodeableConcept.coding.code = #1276211000168102
-* medicationCodeableConcept.coding.display = "Bicillin L-A 1.2 million units (1016.6 mg)/2.3 mL injection, 2.3 mL syringe"
+* medicationCodeableConcept.coding = $SCT#1276211000168102 "Bicillin L-A 1.2 million units (1016.6 mg)/2.3 mL injection, 2.3 mL syringe"
 * subject = Reference(MikePondPatient)
 * authoredOn = "2023-10-01"
 * requester = Reference(DoctorPayneRole1)
@@ -145,9 +143,7 @@ InstanceOf: ARFMedicationStatement
 Description: "Example of Medication statement of administered dose of Bicillin"
 * status = #completed
 * basedOn = Reference(BicillinMedicationRequest)
-* medicationCodeableConcept.coding.system = $SCT
-* medicationCodeableConcept.coding.code = #1276211000168102
-* medicationCodeableConcept.coding.display = "Bicillin L-A 1.2 million units (1016.6 mg)/2.3 mL injection, 2.3 mL syringe"
+* medicationCodeableConcept.coding = $SCT#1276211000168102 "Bicillin L-A 1.2 million units (1016.6 mg)/2.3 mL injection, 2.3 mL syringe"
 * subject = Reference(MikePondPatient)
 * effectiveDateTime = "2024-05-01"
 * dateAsserted = "2024-05-01"
@@ -156,20 +152,20 @@ Description: "Example of Medication statement of administered dose of Bicillin"
 * dosage.timing.repeat.period = 4
 * dosage.timing.repeat.periodMax = 5
 * dosage.timing.repeat.periodUnit = #wk
-* dosage.route.coding.system = $SCT
-* dosage.route.coding.code = #78421000
-* dosage.route.coding.display = "Intramuscular route"
+* dosage.route.coding = $SCT#78421000 "Intramuscular route"
 * dosage.doseAndRate.doseQuantity.value = 1016.6
 * dosage.doseAndRate.doseQuantity.unit = "mg"
 * dosage.doseAndRate.doseQuantity.system = "http://unitsofmeasure.org"
 * dosage.doseAndRate.doseQuantity.code = #mg
+* dosage.patientInstruction = "Appointment for next Bicillin injection 2pm on 27-05-2024.  Please call if you are unable to attend."
+* dosage.text = "Mike Pond booked appointment for 2pm 27-05-2024"
 
 // Example Careplan for patient with RHD
 Instance: MikePondCarePlan
 InstanceOf: ARFCarePlan
 Description: "Example of care plan for patient with ARF"
 * identifier.type.coding.system = $IdType
-* identifier.type.coding.code = #LPN
+* identifier.type.coding.code = #LR
 * identifier.system = "http://arfregister.example.au/id/registerid/localsystem"
 * identifier.value = "987654321"
 * title = "Rheumatic fever care plan for patient Mike Pond"
