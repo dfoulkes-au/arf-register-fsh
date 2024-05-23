@@ -7,7 +7,7 @@ id: fhir.arfregister
 canonical: http://fhir-arf-register.nardhc.org
 name: ARFRegisterIG
 title: Implementation Guide for ARF/RHD Register - AU
-description: FHIR Implementation Guide for Acute Rheumatic Fever/Rheumatic Heart Disease Register - Australia version
+description: FHIR Implementation Guide for Acute Rheumatic Fever/Rheumatic Heart Disease Register - Australian version
 status: draft # draft | active | retired | unknown
 version: 0.1.3
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
