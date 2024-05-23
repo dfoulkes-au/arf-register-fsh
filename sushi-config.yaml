@@ -9,7 +9,7 @@ name: ARFRegisterIG
 title: Implementation Guide for ARF/RHD Register - AU
 description: FHIR Implementation Guide for Acute Rheumatic Fever/Rheumatic Heart Disease Register - Australia version
 status: draft # draft | active | retired | unknown
-version: 0.1.1
+version: 0.1.3
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 dependencies:
   hl7.fhir.au.core: 0.3.0-ballot
