@@ -30,25 +30,25 @@ The profiles outlines in this implementation guide support the following primary
 
 This occurs after a patient has received a diagnosis (or suspected diagnosis),  and involves registering a patient for the first time on the registry.   Typically this would be achieved by posting a FHIR bundle containing and instance of each of the following resources:
 
-* [ARF Patient](StructureDefinition-ARFPatient.html) - patient demographic information  [Example](https://fhir-arf-register.nardhc.org/Patient-MikePondPatient.html)
-* [ARF Condition](StructureDefinition-ARFCondition.html) - diagnosis and severity of ARF/RHD condition [Example](https://fhir-arf-register.nardhc.org/Condition-MikePondCondition.html)
-* [ARF Allergy](StructureDefinition-ARFAllergy.html) - any known medication allergies [Example](https://fhir-arf-register.nardhc.org/AllergyIntolerance-MikePondMedicationAllergy.html)
+* [ARF Patient](StructureDefinition-ARFPatient.html) - patient demographic information  [Example](https://fhir-arf-register.nardhc.org/Patient-MikePondPatient.html) [JSON](https://fhir-arf-register.nardhc.org/Patient-MikePondPatient.json.html)
+* [ARF Condition](StructureDefinition-ARFCondition.html) - diagnosis and severity of ARF/RHD condition [Example](https://fhir-arf-register.nardhc.org/Condition-MikePondCondition.html) [JSON](https://fhir-arf-register.nardhc.org/Condition-MikePondCondition.json.html)
+* [ARF Allergy](StructureDefinition-ARFAllergy.html) - any known medication allergies [Example](https://fhir-arf-register.nardhc.org/AllergyIntolerance-MikePondMedicationAllergy.html) [JSON](https://fhir-arf-register.nardhc.org/AllergyIntolerance-MikePondMedicationAllergy.json.html)
 
 #### Create CarePlan and Prescribe Medication
 
 This workflow may take place for a newly registered patient, or it be used to record a careplan/prescription for a subsequent or updated care episode.  This process creates (or updates) a Care Plan and a Medication Request resouce (see profiles below) describing frequency and dosage of medications and specifying which Organization(s) and Practitioners will be responsible for the patient care.  Where new information is available (eg. updated phone numbers or disease severity), this process may also optionally be used to update the Patient, Condition or Allergy resources created by the Patient Registration workflow.
 
-* [ARF CarePlan](StructureDefinition-ARFCarePlan.html) - care plan outline and practitioners/providers responsible to deliver the care
-* [ARF MedicationRequest](StructureDefinition-ARFMedicationRequest.html) - prescribed frequency and dosage of medication
-* [ARF Organisation](https://fhir-arf-register.nardhc.org/StructureDefinition-ARFOrganisation.html) - health provider organisation responsible for CarePlan
-* [ARF Practitioner](https://fhir-arf-register.nardhc.org/StructureDefinition-ARFPractitioner.html) - practioner providing care for ARF patient
-* [ARF PractionerRole](https://fhir-arf-register.nardhc.org/StructureDefinition-ARFPractitionerRole.html) - practioner (medicare provider) role
+* [ARF CarePlan](StructureDefinition-ARFCarePlan.html) - care plan outline and practitioners/providers responsible to deliver the care [Example](https://fhir-arf-register.nardhc.org/CarePlan-MikePondCarePlan.html) [JSON](https://fhir-arf-register.nardhc.org/CarePlan-MikePondCarePlan.json.html)
+* [ARF MedicationRequest](StructureDefinition-ARFMedicationRequest.html) - prescribed frequency and dosage of medication [Example](https://fhir-arf-register.nardhc.org/MedicationRequest-BicillinMedicationRequest.html) [JSON](https://fhir-arf-register.nardhc.org/MedicationRequest-BicillinMedicationRequest.json.html)
+* [ARF Organisation](https://fhir-arf-register.nardhc.org/StructureDefinition-ARFOrganisation.html) - health provider organisation responsible for CarePlan [Example](https://fhir-arf-register.nardhc.org/Organization-VeryRemoteClinic.html) [JSON](https://fhir-arf-register.nardhc.org/Organization-VeryRemoteClinic.json.html)
+* [ARF Practitioner](https://fhir-arf-register.nardhc.org/StructureDefinition-ARFPractitioner.html) - practioner providing care for ARF patient [Example](https://fhir-arf-register.nardhc.org/Practitioner-DoctorPayne.html) [JSON](https://fhir-arf-register.nardhc.org/Practitioner-DoctorPayne.json.html)
+* [ARF PractionerRole](https://fhir-arf-register.nardhc.org/StructureDefinition-ARFPractitionerRole.html) - practioner (medicare provider) role [Example](https://fhir-arf-register.nardhc.org/PractitionerRole-DoctorPayneRole1.html) [JSON](https://fhir-arf-register.nardhc.org/PractitionerRole-DoctorPayneRole1.json.html)
 
 #### Record Medication Administration
 
 This workflow takes place when a specific instance of the medication request has been administered to the patient.  It creates a single Medication Statement resource recording the date, provider, dosage, route etc. of the medication administration.   This workflow may also optionally update the CarePlan with a different practitioner/provider and or the patient contact details.
 
-* [ARF MedicationStatement](StructureDefinition-ARFMedicationStatement.html) - administered time, dosage, route of medication
+* [ARF MedicationStatement](StructureDefinition-ARFMedicationStatement.html) - administered time, dosage, route of medication [Example](https://fhir-arf-register.nardhc.org/MedicationStatement-BicillinMedicationStatement.html) [JSON](https://fhir-arf-register.nardhc.org/MedicationStatement-BicillinMedicationStatement.json.html)
 
 #### Query Status of the Patient
 
