@@ -8,7 +8,7 @@ ARF and RHD are relatively rare in developed countries, being closely associated
 
 Whilst primary prevention requires addressing the underlying socio-economic causes,  secondary prevention of rheumatic fever recurrence relies on correct diagnosis and regular  3-4 weekly intramuscular injections of benzathine penicillin G (BPG or Bicillin) administered over a prolonged period (10 years or more).  Failure to maintain regularity of this treatment places the patient at risk of accumulative damage to heart valves, and can lead to heart failure and/or stroke.
 
-Studies have shown that in Northern Queensland, adherence to recommended frequency of such injections has been very low.  There are a number of contributing factors to this,  not least of which is the degree of discomfort caused to the patient in administering this injection. However the stark reality is that many patients with diagnosed ARF are at significant risk of developing RHD:
+Studies have shown that in Northern Queensland, adherence to recommended frequency of such injections has been low.  There are a number of contributing factors to this,  not least of which is the degree of discomfort caused to the patient in administering this injection. However the stark reality is that many patients with diagnosed ARF are at significant risk of developing RHD:
 > Overall, adherence to secondary prophylaxis for ARF/RHD in Far North Queensland over the study period was insufficient to provide prophylaxis against recurrences of ARF per current guidelines. The vast majority of injections were not delivered within the recommended 28‐day interval and a significant number were not even administered within 35 days.
 <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8048926/>
 
