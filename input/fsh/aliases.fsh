@@ -69,6 +69,7 @@ Alias: $au-australiancompanynumber = http://hl7.org.au/fhir/StructureDefinition/
 Alias: $au-australianregistredbodynumber = http://hl7.org.au/fhir/StructureDefinition/au-australianregistredbodynumber
 Alias: $au-nataaccreditationnumber = http://hl7.org.au/fhir/StructureDefinition/au-nataaccreditationnumber
 Alias: $au-pharmacyapprovalnumber = http://hl7.org.au/fhir/StructureDefinition/au-pharmacyapprovalnumber
+
 // patient identifier links
 Alias: $au-ihi = http://hl7.org.au/fhir/StructureDefinition/au-ihi
 Alias: $au-dvanumber = http://hl7.org.au/fhir/StructureDefinition/au-dvanumber
@@ -89,9 +90,11 @@ Alias: $common-languages-australia-2 = https://healthterminologies.gov.au/fhir/V
 // Identifier System urls
 Alias:  $ARFRegisterSystem = http://arf-register.nardhc.org/system/registration-id
 Alias:  $HPIOIdentifierSystem = http://ns.electronichealth.net.au/id/hi/hpio/1.0
+Alias:  $PAIOIdentifierSystem = http://ns.electronichealth.net.au/id/pcehr/paio/1.0
 Alias:  $HPIIIdentifierSystem = http://ns.electronichealth.net.au/id/hi/hpii/1.0
 Alias:  $MedicareProviderIdentifierSystem = http://ns.electronichealth.net.au/id/medicare-provider-number
 Alias:  $IHIIdentifierSystem = http://ns.electronichealth.net.au/id/hi/ihi/1.0
+
 
 
 
