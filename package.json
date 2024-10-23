@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "hl7.fhir.au.base": "^4.1.0"
+    "hl7.fhir.au.base": "^4.1.0",
+    "hl7.fhir.au.core": "^1.0.0-ballot"
   }
 }

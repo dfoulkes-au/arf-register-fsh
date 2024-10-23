@@ -5,7 +5,7 @@
 // deceased[x] - ?? should this be deceasedBoolean ??
 // genderIdentity and individualPronouns as agreed for AU Core
 Profile: ARFPatient
-Parent: $au-core-patient
+Parent: $au-patient
 Description: "Profile of Patient with ARF."
 * identifier[ihi] 1..1 MS
 * identifier[medicare] 0..1 MS
@@ -20,5 +20,4 @@ Description: "Profile of Patient with ARF."
 * contact 0..*
 * contact.relationship 1..1
 * contact.name 1..1
-
 

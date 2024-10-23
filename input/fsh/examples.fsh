@@ -6,9 +6,9 @@ Description: "An example of a clinic providing health services to ARF patient."
 * telecom.system = #phone
 * telecom.value = "+61 7 12345678"
 * identifier.use = #official
-* identifier.type.coding.system = $IdTypeAU
+* identifier.type.coding.system = $au-id-type-cs
 * identifier.type.coding.code = #NOI
-* identifier.system = $HPIOIdentifierSystem
+* identifier.system = $id-hpio-system
 * identifier.value = "8003621566684455"
 * address.line = "2342 Main Road"
 * address.city = "Coen"
@@ -20,9 +20,9 @@ Instance: DoctorPayne
 InstanceOf: ARFPractitioner
 Description: "Example of Practioner Providing Care for ARF Patient"
 * identifier.use = #official
-* identifier.type.coding.system = $IdType
+* identifier.type.coding.system = $id-type-cs
 * identifier.type.coding.code = #NPI
-* identifier.system = $HPIIIdentifierSystem
+* identifier.system = $id-hpii-system
 * identifier.value = "8003619900015717"
 * name
   * given[0] = "Jane"
@@ -37,9 +37,9 @@ Instance: DoctorPayneRole1
 InstanceOf: ARFPractitionerRole
 Description: "Example of Practioner Providing Care for ARF Patient"
 * identifier.use = #official
-* identifier.type.coding.system = $IdTypeAU
+* identifier.type.coding.system = $au-id-type-cs
 * identifier.type.coding.code = #UPIN
-* identifier.system = $MedicareProviderIdentifierSystem
+* identifier.system = $id-medicare-provider-system
 * identifier.value = "2426621B"
 * practitioner = Reference(DoctorPayne)
 * organization = Reference(VeryRemoteClinic)
@@ -51,9 +51,9 @@ Instance: MikePondPatient
 InstanceOf: ARFPatient
 Description: "An example of a patient recorded in ARF register."
 * identifier.use = #official
-* identifier.type.coding.system = $IdType
+* identifier.type.coding.system = $id-type-cs
 * identifier.type.coding.code = #NI
-* identifier.system = $IHIIdentifierSystem
+* identifier.system = $id-ihi-system
 * identifier.value = "8003608833357361"
 * name
   * given[0] = "Mike"
@@ -63,8 +63,8 @@ Description: "An example of a patient recorded in ARF register."
 * telecom.system = #phone
 * telecom.value = "+61 444 123456"
 * telecom.value = "+61 444 123456"
-* extension.url = $indigenous-status
-* extension.valueCoding = $indigenous-status-cs#3 "Both Aboriginal and Torres Strait Islander origin"
+* extension.url = $au-indigenous-status
+* extension.valueCoding = $au-indigenous-status-cs#3 "Both Aboriginal and Torres Strait Islander origin"
 * managingOrganization = Reference(VeryRemoteClinic)
 * generalPractitioner = Reference(DoctorPayne)
 
@@ -72,7 +72,7 @@ Description: "An example of a patient recorded in ARF register."
 Instance: MikePondCondition
 InstanceOf: ARFCondition
 Description: "Example of ARF Condition for Patient."
-* identifier.system = $ARFRegisterSystem
+* identifier.system = $ARF-register-system
 * identifier.value = "ARF1000123"
 * code.coding.system = $SCT
 * code.coding.code = #195528001
@@ -132,7 +132,7 @@ Description: "Example of Medication Request (prescription) of Bicillin"
 * dosageInstruction.timing.repeat.periodUnit = #wk
 * dispenseRequest.dispenseInterval.value = 4
 * dispenseRequest.dispenseInterval.unit = "week"
-* dispenseRequest.dispenseInterval.system = "http://unitsofmeasure.org"
+* dispenseRequest.dispenseInterval.system = $UCUM
 * dispenseRequest.dispenseInterval.code = #wk
 * dispenseRequest.validityPeriod.start = "2023-10-01"
 * dispenseRequest.validityPeriod.end = "2024-10-01"
@@ -155,7 +155,7 @@ Description: "Example of Medication statement of administered dose of Bicillin"
 * dosage.route.coding = $SCT#78421000 "Intramuscular route"
 * dosage.doseAndRate.doseQuantity.value = 1016.6
 * dosage.doseAndRate.doseQuantity.unit = "mg"
-* dosage.doseAndRate.doseQuantity.system = "http://unitsofmeasure.org"
+* dosage.doseAndRate.doseQuantity.system = $UCUM
 * dosage.doseAndRate.doseQuantity.code = #mg
 * dosage.patientInstruction = "Appointment for next Bicillin injection 2pm on 27-05-2024.  Please call if you are unable to attend."
 * dosage.text = "Mike Pond booked appointment for 2pm 27-05-2024"
@@ -164,7 +164,7 @@ Description: "Example of Medication statement of administered dose of Bicillin"
 Instance: MikePondCarePlan
 InstanceOf: ARFCarePlan
 Description: "Example of care plan for patient with ARF"
-* identifier.type.coding.system = $IdType
+* identifier.type.coding.system = $id-type-cs
 * identifier.type.coding.code = #LR
 * identifier.system = "http://arfregister.example.au/id/registerid/localsystem"
 * identifier.value = "987654321"

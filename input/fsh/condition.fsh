@@ -2,7 +2,7 @@
 // TODO:
 // identifier - define ARFRegisterIdentifier unique register id
 Profile: ARFCondition
-Parent: $au-core-condition
+Parent: $au-condition
 Description: "Profile of ARF Condition."
 * identifier 1..* MS
 * code from ARFDiagnosisCodeVS (required)

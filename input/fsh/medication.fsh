@@ -3,7 +3,7 @@
 // TODO:
 // add basedOn with ref to care plan
 Profile: ARFMedicationRequest
-Parent: $au-core-medicationrequest
+Parent: $au-medicationrequest
 Description: "Profile of Medication Prescribed for ARF Patient."
 * identifier 1..* MS
 * status 1..1 MS 
@@ -21,7 +21,7 @@ Description: "Profile of Medication Prescribed for ARF Patient."
 // TODO:
 // add context Reference(ARFMedicationRequest)
 Profile: ARFMedicationStatement
-Parent: $au-core-medicationstatement
+Parent: $au-medicationstatement
 Description: "Profile of Medication Administered to ARF Patient."
 * status = #completed
 * basedOn only Reference(ARFMedicationRequest)
