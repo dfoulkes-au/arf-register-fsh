@@ -35,18 +35,19 @@ Create examples
 <br />
 <div align="center">
   <a href="https://github.com/dfoulkesjcu/arf-register-fsh">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/logo.ico" alt="ARF Logo" width="80" height="80">
   </a>
 
-<h3 align="center">project_title</h3>
+<h3 align="center">FHIR Specification for Acute Rheumatic Fever - </h3>
 
   <p align="center">
-    project_description
+    This project contians the FHIR Shorthand (FSH) for an Implementation Guide for Diagnosis and Management of Acute Rheumatic Fever.
+    It is intended to form the basis of interactions between multiple providers and a central FHIR registry and could be used as the data Specification
+    for a National ARF Register.   Based on FHIR AU Core but readily modifiable to generic FHIR or to another regional adaptation.
     <br />
     <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
     ·
     <a href="https://github.com/github_username/repo_name/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     ·
