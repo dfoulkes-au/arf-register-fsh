@@ -1,4 +1,49 @@
 <a id="readme-top"></a>
+<div align="center">
+  <a href="https://github.com/dfoulkesjcu/arf-register-fsh">
+    <img src="docimg/logo.ico" alt="ARF Logo" width="80" height="80">
+  </a>
+
+<h3 align="center">
+  <p align="center">
+    This project contians the FHIR Shorthand (FSH) for an Implementation Guide for Diagnosis and Management of Acute Rheumatic Fever.
+    It is intended to form the basis of interactions between multiple providers and a central FHIR registry and could be used as the data Specification
+    for a National ARF Register.   Based on FHIR AU Core but readily modifiable to generic FHIR or to another regional adaptation.
+    <br />
+    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    ·
+    <a href="https://github.com/github_username/repo_name/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
+    ·
+    <a href="https://github.com/github_username/repo_name/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+  </p>
+</div>
+<details>
+<summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>  
+  
 ## Notes
 Need to create a proper readme but this is an initial collection of notes.
 
@@ -30,62 +75,6 @@ Create examples
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
-
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/dfoulkesjcu/arf-register-fsh">
-    <img src="docimg/logo.ico" alt="ARF Logo" width="80" height="80">
-  </a>
-
-<h3 align="center">FHIR Specification for Acute Rheumatic Fever - </h3>
-
-  <p align="center">
-    This project contians the FHIR Shorthand (FSH) for an Implementation Guide for Diagnosis and Management of Acute Rheumatic Fever.
-    It is intended to form the basis of interactions between multiple providers and a central FHIR registry and could be used as the data Specification
-    for a National ARF Register.   Based on FHIR AU Core but readily modifiable to generic FHIR or to another regional adaptation.
-    <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    ·
-    <a href="https://github.com/github_username/repo_name/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
-  </p>
-</div>
-
-
-
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
-
-
-
-<!-- ABOUT THE PROJECT -->
 ## About The Project
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
@@ -98,14 +87,8 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 ### Built With
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+[![FSH][fsh-badge]][fsh-url]
+[![Sushi][sushi-badge]][sushi-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -245,6 +228,9 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/linkedin_username
 [product-screenshot]: images/screenshot.png
+[fsh-badge]: https://fshschool.org/favicon.ico
+[fsh-url]: https://fshschool.org/
+
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
