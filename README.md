@@ -35,7 +35,7 @@ Create examples
 <br />
 <div align="center">
   <a href="https://github.com/dfoulkesjcu/arf-register-fsh">
-    <img src="images/logo.ico" alt="ARF Logo" width="80" height="80">
+    <img src="docimg/logo.ico" alt="ARF Logo" width="80" height="80">
   </a>
 
 <h3 align="center">FHIR Specification for Acute Rheumatic Fever - </h3>
