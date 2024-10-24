@@ -170,15 +170,8 @@ See the [open issues](https://github.com/github/dfoulkesjcu/arf-register-fsh/iss
 
 ### Contact
 
-[linkedin-shield][Northern Australian Regional Digital Health Collaborative](https://www.linkedin.com/company/101721851/admin/dashboard/)
-[linkedin-shield][Daniel Foulkes](https://www.linkedin.com/in/daniel-foulkes/)
-
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
-
-[![Contributors][contributors-shield]][contributors-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+![linkedin-shield][Northern Australian Regional Digital Health Collaborative](https://www.linkedin.com/company/101721851/admin/dashboard/)
+![linkedin-shield][Daniel Foulkes](https://www.linkedin.com/in/daniel-foulkes/)
 
 ## How to Contribute
 
@@ -215,5 +208,5 @@ Distributed under the MIT License. See [LICENSE.txt][license-url] for more infor
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg
 [fsh-badge]: https://fshschool.org/favicon.ico
 [fsh-url]: https://fshschool.org/
-[license-url]: https://github.com/dfoulkesjcu/arf-register-fsh/LICENSE.txt
+[license-url]: https://github.com/dfoulkesjcu/arf-register-fsh/blob/main/LICENSE.txt
 
