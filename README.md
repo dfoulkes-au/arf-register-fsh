@@ -167,13 +167,7 @@ See the [open issues](https://github.com/github/dfoulkesjcu/arf-register-fsh/iss
 
 ## About the Project
 
-
-### Contact
-
-![linkedin-shield][Northern Australian Regional Digital Health Collaborative](https://www.linkedin.com/company/101721851/admin/dashboard/)
-![linkedin-shield][Daniel Foulkes](https://www.linkedin.com/in/daniel-foulkes/)
-
-## How to Contribute
+### How to Contribute
 
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also open an issue with the tag "enhancement".
 
@@ -191,6 +185,11 @@ Distributed under the MIT License. See [LICENSE.txt][license-url] for more infor
 * [FHIR Shorthand FSH](https://build.fhir.org/ig/HL7/fhir-shorthand/overview.html)
 * [FHIR Australia AU FHIR Base Implementation Guide](https://build.fhir.org/ig/hl7au/au-fhir-base/index.html)
 * [Te Whatu Ora Shared Care FHIR API](https://build.fhir.org/ig/tewhatuora/cinc-fhir-ig/index.html)
+
+### Contacts
+
+* [Northern Australian Regional Digital Health Collaborative][linkedin-nardhc-url]
+* [Daniel Foulkes][linkedin-df-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
