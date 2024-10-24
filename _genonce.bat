@@ -23,5 +23,7 @@ IF EXIST "%input_cache_path%\%publisher_jar%" (
 ) ELSE (
 	ECHO IG Publisher NOT FOUND in input-cache or parent folder.  Please run _updatePublisher.  Aborting...
 )
-
+xcopy output ..\arf-register-output /s/d/y
+xcopy README.output ..\arf-register-output\README.md /d/y
+xcopy docimg\logo.ico ..\arf-register-output\logo.ico /d/y
 PAUSE

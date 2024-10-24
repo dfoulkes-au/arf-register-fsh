@@ -1,5 +1,6 @@
 .DS_Store
 Thumbs.db
+README.output
 /fsh-generated
 /input-cache
 /output
