@@ -26,5 +26,5 @@ IF EXIST "%input_cache_path%\%publisher_jar%" (
 xcopy output ..\arf-register-output /s/d/y
 xcopy README.output ..\arf-register-output\README.md /d/y
 xcopy docimg\logo.ico ..\arf-register-output\logo.ico /d/y
-xcopy LICENSE.txt ../arf-register-output\LICENSE.txt
+xcopy LICENSE.txt ..\arf-register-output\LICENSE.txt /d/y
 PAUSE
