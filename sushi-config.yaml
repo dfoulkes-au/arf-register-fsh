@@ -21,7 +21,7 @@ releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | re
 license: Apache-2.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 jurisdiction: urn:iso:std:iso:3166#AUS "Australia" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
-  name: D Foulkes - Northern Australia Regional Digital Health Collaborative
+  name: Northern Australian Regional Digital Health Collaborative
   url: https://nardhc.org
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
