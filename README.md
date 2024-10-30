@@ -1,6 +1,6 @@
 <a id="readme-top"></a>
 <div align="center">
-  <a href="https://github.com/dfoulkesjcu/arf-register-fsh"><img src="docimg/logo.ico" alt="ARF Logo" width="80" height="80"></a>
+  <a href="https://github.com/dfoulkes-au/arf-register-fsh"><img src="docimg/logo.ico" alt="ARF Logo" width="80" height="80"></a>
   <h2>Acute Rheumatic Fever FHIR IG - Code Package</h2>
 </div>
 
@@ -12,7 +12,7 @@ This project contains the FHIR Shorthand (FSH) code for creating an Implementati
 
 The code in this project describes a downstream IG based on FHIR AU Core and AU Base specifications (i.e. for the Australian context).  The primary use of this project is expected to be for those who wish to extend this specification and/or to adapt it for a different national context (eg. US Core).   To create the IG from the code included in this project,  you will need to compile the code using Sushi as described below.  
 
-If you simply wish to deploy this IG without modification,  go to [Acute Rheumatic Fever FHIR IG - Deployment Package](https://github.com/dfoulkesjcu/arf-register-output) where you can access the html/js files required.
+If you simply wish to deploy this IG without modification,  go to [Acute Rheumatic Fever FHIR IG - Deployment Package](https://github.com/dfoulkes-au/arf-register-output) where you can access the html/js files required.
 
 If you like this, don't forget to give the project a star! Thanks again!
 
@@ -52,7 +52,7 @@ To setup and deploy the IG, first ensure that you have the pre-requisite softwar
 1. Create or go to a folder that you will use for working with the FSH code
 2. Clone this repository by executing:
   ```sh
-  git clone https://github.com/dfoulkesjcu/arf-register-fsh.git
+  git clone https://github.com/dfoulkes-au/arf-register-fsh.git
   ```
 3. Install the FHIR packages listed in the dependencies section of the sushi-config.yaml file (currently these are hl7.fhir.au.core@1.0.0-ballot and hl7.fhir.au.base@4.1.0 but will be updated as newer/normative versions become available).  For example:
   ```sh
@@ -162,7 +162,7 @@ Major epics under consideration include:
 - Elaborate and add workflows and profiles for Rheumatic Heart Disease (RHD)
 - Fork project for 'International' version with dependencies on standard (not country specific) FHIR profiles
 
-See the [open issues](https://github.com/github/dfoulkesjcu/arf-register-fsh/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/github/dfoulkes-au/arf-register-fsh/issues) for a list of proposed features (and known issues).
 
 
 ## About the Project
@@ -207,5 +207,5 @@ Distributed under the MIT License. See [LICENSE.txt][license-url] for more infor
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg
 [fsh-badge]: https://fshschool.org/favicon.ico
 [fsh-url]: https://fshschool.org/
-[license-url]: https://github.com/dfoulkesjcu/arf-register-fsh/blob/main/LICENSE.txt
+[license-url]: https://github.com/dfoulkes-au/arf-register-fsh/blob/main/LICENSE.txt
 
